@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+  int temp,num,rev,rem;
+  printf("enter a number\n");
+  scanf("%d",&num);
+  temp=num;
+  rev=0; //initally
+  while(num!=0)
+    {
+      rem=num%10;  // calculating reminder
+      num=num/10;  //floating points are ignored
+      rev=(rev*10)+rem; // rev of the num
+    }
+  printf("the reverse of num is %d\n",rev);
+  if(temp==rev)
+  {
+    printf("is palindrome %d\n",temp);
+    
+  }else{
+    printf("not palindrome %d",temp);
+  }
+}
