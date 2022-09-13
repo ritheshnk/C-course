@@ -11,7 +11,7 @@ int main()
     {
       rem=num%10;  // calculating reminder
     rev=(rev*10)+rem;   //floating points are ignored
-       num=num/10;   // rev of the num
+       num=num/10;   // rev of the num  .num is quotient 
     }
   printf("the reverse of num is %d\n",rev);
   if(temp==rev)
