@@ -22,3 +22,6 @@ int main()
     printf("not palindrome %d",temp);
   }
 }
+
+/*if we use % with 10 we get last no of the give inpt ie 456%10 we get 6 
+and if we divide it by 10 ir 456/10 we get remaining no ie 45*/
