@@ -1,4 +1,3 @@
-//progtram to cal no of odd number in array
 #include <stdio.h>
 #include <stdlib.h>
 void printchar(char arr[]);
