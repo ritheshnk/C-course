@@ -1,27 +1,38 @@
 #include<stdio.h>
 #include<stdlib.h>
-int main()
+
+
+int ispalindrome(int num)
 {
-  int temp,num,rev,rem;
-  printf("enter a number\n");
-  scanf("%d",&num);
-  temp=num;
-  rev=0; //initally
-  while(num!=0)
+    int originalnum=num;
+    int rev=0;
+
+    while(num!=0)
     {
-      rem=num%10;  // calculating reminder
-    rev=(rev*10)+rem;   //floating points are ignored
-       num=num/10;   // rev of the num  .num is quotient 
+        rev=rev*10+num%10;
+        num=num/10;
     }
-  printf("the reverse of num is %d\n",rev);
-  if(temp==rev)
-  {
-    printf("is palindrome %d\n",temp);
-    
-  }else{
-    printf("not palindrome %d",temp);
-  }
+    if(originalnum==rev)
+    {
+        return 1;
+
+    }else{
+        return 0;
+    }
+
 }
 
-/*if we use % with 10 we get last no of the give inpt ie 456%10 we get 6 
-and if we divide it by 10 ir 456/10 we get remaining no ie 45*/
+int main()
+{
+    int num;
+
+    printf("enter a number: ");
+    scanf("%d",&num);
+
+    if(ispalindrome(num))
+    {
+            printf("\nthe number is palindrome\n");
+    }else{
+        printf("\nthe number is not palindrome\n");
+    }
+}
