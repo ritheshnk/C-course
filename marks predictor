@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+  int marks;
+  printf("enter marks:\n");
+  scanf("%d",&marks);
+  if(marks>=85 && marks<=100)
+  {
+    printf("outstranding\n");
+    
+  }else if(marks>=60 && marks<=84)
+  {
+    printf("first class\n");
+  }
+  else if(marks>=50 && marks<=60)
+  {
+    printf("second class\n");
+  }else
+  {
+    printf("fail");
+  }
+}
