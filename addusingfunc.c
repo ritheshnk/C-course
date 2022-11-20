@@ -7,11 +7,10 @@ int main()
 {
   printf("enter first number:");
   scanf("%d",&a);
-    printf("enter second number:");
+  printf("enter second number:");
   scanf("%d",&b);
   int s=sum(a,b);
   printf("%d",s);
-
 }
 int sum(int a,int b){
   return a+b;
